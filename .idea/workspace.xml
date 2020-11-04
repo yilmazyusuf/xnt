@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="003542c3-9bd8-4bbe-8d40-275244b88028" name="Default Changelist" comment="" />
+    <list default="true" id="003542c3-9bd8-4bbe-8d40-275244b88028" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +12,11 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jpE8QqdeV8ERXkvl44VnOezunA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,7 +42,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604492473352</updated>
-      <workItem from="1604492474435" duration="9017000" />
+      <workItem from="1604492474435" duration="9394000" />
     </task>
     <servers />
   </component>
@@ -56,10 +62,18 @@
       <screen x="48" y="27" width="1318" height="741" />
     </state>
     <state width="498" height="446" key="SwitcherDM/48.27.1318.741@48.27.1318.741" timestamp="1604502404017" />
+    <state x="302" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1604502859621">
+      <screen x="48" y="27" width="1318" height="741" />
+    </state>
+    <state x="302" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/48.27.1318.741@48.27.1318.741" timestamp="1604502859621" />
     <state x="437" y="215" width="618" height="522" key="find.popup" timestamp="1604494399466">
       <screen x="48" y="27" width="1318" height="741" />
     </state>
     <state x="437" y="215" width="618" height="522" key="find.popup/48.27.1318.741@48.27.1318.741" timestamp="1604494399466" />
+    <state x="511" y="309" width="381" height="183" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1604502781438">
+      <screen x="48" y="27" width="1318" height="741" />
+    </state>
+    <state x="511" y="309" width="381" height="183" key="git4idea.remote.GitConfigureRemotesDialog/48.27.1318.741@48.27.1318.741" timestamp="1604502781438" />
     <state x="371" y="174" key="run.anything.popup" timestamp="1604502198046">
       <screen x="48" y="27" width="1318" height="741" />
     </state>
