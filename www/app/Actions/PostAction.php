@@ -15,7 +15,7 @@ class PostAction extends Action
         $postSlug = $this->sanitizeString($postSlug);
         $post = $postRepo->getPost($postSlug);
 
-        if($post === false){
+        if ($post === false) {
             http_response_code(404);
             return $this->display('error_404');
         }
