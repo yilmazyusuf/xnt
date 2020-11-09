@@ -1,0 +1,22 @@
+{
+  "name": "yusuf/xnt",
+  "description": "XNT CH",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Yusuf Yılmaz",
+      "email": "y.yilmaz@hotmail.com.tr"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "fzaninotto/faker": "1.9.x-dev",
+    "symfony/console": "9999999-dev",
+    "phpunit/phpunit": "9.5.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
