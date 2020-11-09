@@ -4,6 +4,7 @@
 namespace App;
 
 use App\Actions\Action;
+use App\Actions\PostAction;
 
 
 class Router
@@ -14,8 +15,7 @@ class Router
 
     private static function getUri(): string
     {
-
-        return $_SERVER['REQUEST_URI'];
+        return $_SERVER['REQUEST_URI'] ?? '/';
     }
 
     public function getMatchedAction(): Action
@@ -34,7 +34,7 @@ class Router
             }
         }
         $this->setAction(new PostAction())
-            ->setMethod('index');
+            ->setMethod('show');
 
         return $this->getAction();
 

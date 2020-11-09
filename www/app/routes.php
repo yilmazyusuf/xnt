@@ -2,5 +2,5 @@
 
 return [
     '/' => [\App\Actions\IndexAction::class,'index'],
-    'post/*' => \App\Actions\PostAction::class
+    '/*' => \App\Actions\PostAction::class
 ];

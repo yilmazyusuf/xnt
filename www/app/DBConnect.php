@@ -26,8 +26,10 @@ final class DBConnect
     {
         $config = require 'config.php';
         try {
-            $conn = new PDO("mysql:host={$config['db']['host']};dbname={$config['db']['db']}", $config['db']['user'], $config['db']['pass']);
+            $conn = new PDO("mysql:host={$config['db']['host']};dbname={$config['db']['db']};charset=UTF8", $config['db']['user'], $config['db']['pass']);
+            $conn->exec("set names utf8");
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
             return $conn;
         } catch (PDOException $e) {
             throw $e;
