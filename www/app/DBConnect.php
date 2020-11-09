@@ -13,6 +13,9 @@ final class DBConnect
 
     private function __construct(){}
 
+    /**
+     * @return PDO|null
+     */
     public static function connect()
     {
         if (self::$instance == null) {
@@ -22,6 +25,9 @@ final class DBConnect
         return self::$instance;
     }
 
+    /**
+     * @return PDO
+     */
     private static function doConnect() : PDO
     {
         $config = require 'config.php';

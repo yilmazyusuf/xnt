@@ -6,20 +6,50 @@ namespace App\Repos;
 class Post extends Repository
 {
 
+    /**
+     * @var string
+     */
     private string $title;
+    /**
+     * @var string
+     */
     private string $slug;
+    /**
+     * @var string
+     */
     private string $content;
+    /**
+     * @var int
+     */
     private int $is_headline;
+    /**
+     * @var int
+     */
     private int $user_id;
+    /**
+     * @var string
+     */
     private string $created_at;
+    /**
+     * @var string
+     */
     private string $updated_at;
 
+    /**
+     * @return array
+     */
     public function getPosts(): array
     {
         return $this->db()->query('select * from posts order by  created_at desc')
             ->fetchAll();
     }
 
+    /**
+     * Single Post
+     *
+     * @param string $slug
+     * @return mixed
+     */
     public function getPost(string $slug)
     {
         $sql = 'select * from posts where slug=?';
@@ -29,9 +59,11 @@ class Post extends Repository
 
     }
 
+    /**
+     * @return bool
+     */
     public function savePost()
     {
-
         $params = [
             $this->getTitle(),
             $this->getSlug(),
@@ -175,6 +207,5 @@ class Post extends Repository
         $this->slug = $slug;
         return $this;
     }
-
 
 }
