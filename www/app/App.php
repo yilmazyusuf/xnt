@@ -4,7 +4,7 @@
 namespace App;
 
 
-use App\Actions\IndexAction;
+use App\Router;
 
 class App
 {

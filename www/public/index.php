@@ -1,3 +1,3 @@
 <?php
 require '../vendor/autoload.php';
-\App\App::run();
+App\App::run();
