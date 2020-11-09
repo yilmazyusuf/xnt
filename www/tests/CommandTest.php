@@ -4,8 +4,6 @@
 use App\Commands\PostCreateCommand;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Application;
-use Symfony\Component\Console\Input\ArrayInput;
-use Symfony\Component\Console\Output\BufferedOutput;
 use Symfony\Component\Console\Tester\CommandTester;
 
 final class CommandTest extends TestCase
@@ -23,7 +21,7 @@ final class CommandTest extends TestCase
 
         $output = $commandTester->getDisplay();
 
-        $this->assertContains($output,['Post Created']);
+        $this->assertContains($output, ['Post Created']);
 
 
     }

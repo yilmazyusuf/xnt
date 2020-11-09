@@ -10,6 +10,9 @@ use Symfony\Component\Console\Application;
 class App
 {
 
+    /**
+     * @return int
+     */
     public static function run()
     {
 
@@ -24,12 +27,15 @@ class App
 
     }
 
+    /**
+     * @return int
+     * @throws \Exception
+     */
     private static function registerCommands(): int
     {
         $application = new Application();
         $application->add(new PostCreateCommand());
         return $application->run();
     }
-
 
 }
